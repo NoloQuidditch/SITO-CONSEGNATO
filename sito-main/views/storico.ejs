@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/storico.css">
+	<title>Nolo Quidditch</title>
+
+</head>
+<% if (ruolo=="amministratore" ){ %>
+		<h1>Noleggi in corso</h1>
+		<% } else { %>
+		<h1>I tuoi noleggi</h1>	
+			<% } %>
+
+
+
+<body>
+	<% if (ruolo=="amministratore" ){ %>
+		<a href="admin"><button id="bottone">Pagina amministratore</button></a>
+		<% } else { %>
+			<a href="home"><button id="bottone">home</button></a>
+			<% } %>
+				<div>
+					<table>
+						<% orders.forEach(function(order){ %>
+							<tr>
+								<td id="person"><b>utente: </b>
+									<%=order.utente%>
+								</td>
+							</tr>
+							<tr>
+								<td><b>data e ora: </b>
+									<%=new Date(order.dataeora).toString()%>
+								</td>
+								<% if (ruolo=="amministratore" ){ %>
+									<% if (order.stato=="noleggio concluso" ){ %>
+										<td id="stato"><b>stato: </b>
+											<%=order.stato%>
+										</td>
+										<% } else { %>
+											<form action="/storico" method="post">
+												<input type="hidden" value="<%= order.utente%>" name="utente" />
+												<input type="hidden" value="<%= order.dataeora%>" name="dataeora" />
+												<td><b>stato: </b><select name="stato" value="<%= order.stato%>">
+														<option value="noleggio in corso" <%
+															order.stato=="noleggio in corso" ? "selected" : "" %>
+															>Noleggio in corso</option>
+														<option value="noleggio concluso" <%
+															order.stato=="noleggio concluso" ? "selected" : "" %>
+															>Noleggio concluso</option>
+													</select>
+													<input type="submit" value="salva" id="salva" />
+											</form>
+											<% }} else { %>
+												<td><b>stato: </b>
+													<%=order.stato%>
+												</td>
+												<% } %>
+													<td id="fattura"><a
+															href="ordine/pdf?utente=<%=order.utente%>&dataeora=<%= order.dataeora %>"><button
+																id="bottone">Fattura</button></a></td>
+							</tr>
+
+							<tr>
+								<% order.prodotti.forEach(function(product){ %>
+							<tr>
+								<td><b>prodotto: </b>
+									<%=product.nome%>
+								</td>
+								<td><b>numero: </b>
+									<%=product.quantita%>
+								</td>
+
+							</tr>
+							<% });%>
+								</tr>
+								<% });%>
+					</table>
+
+				</div>
+
+</body>

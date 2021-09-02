@@ -1,0 +1,128 @@
+h1{
+  color: gold;
+  font-family: 'Tangerine', cursive;
+  font-size: 400%;
+   padding-left: 10%;
+}
+
+#logo{
+width: 8%;
+padding-right: 3%;
+margin-top: 2%;
+
+}
+#descrizione{
+font-family: "Times new roman", serif;
+}
+
+#nomeitem{
+color: gold;
+}
+
+
+#newprod{
+  color: gold;
+  font-family: 'Tangerine', cursive;
+  font-size: 250%;
+  padding-left: 15%;
+  padding-right: 12%;
+  padding-top: -50%;
+
+}
+
+#modificaprod{
+  font-family: 'Tangerine', cursive;
+  font-weight: bolder;
+  font-size: 225%;
+   color:  #DAA520;
+   padding-left: 15%;
+   padding-right: 12%; ;
+}
+
+
+table tr {
+  background-color: #191970;
+  border: 1px solid #ddd;
+  padding: .35em;
+  color: white;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+ 
+#newprod{
+  color: gold;
+  font-family: 'Tangerine', cursive;
+  font-size: 120%;
+ padding:  auto;
+ text-align: center;
+}
+
+#modificaprod{
+  font-family: 'Tangerine', cursive;
+  font-weight: bolder;
+  font-size: 90%;
+   color:  #DAA520;
+ 
+}
+
+
+  table {
+    border: 0;
+    margin:  auto;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: center;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}

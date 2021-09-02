@@ -1,0 +1,21 @@
+h1{
+  color: gold;
+  font-family: 'Tangerine', cursive;
+  font-size: 350%;
+}
+
+.text{
+  color: white;
+}
+
+#bottone{
+margin-top: 3%;
+}
+
+#arrivederci{
+  color: #DAA520;
+  font-family: 'Tangerine', cursive;
+  font-size: 250%;
+  padding-top: 3%;
+  text-align: center;
+}

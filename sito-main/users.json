@@ -1,0 +1,22 @@
+[
+    {
+        "utente": "viktorkrum",
+        "password": "hermion3",
+        "ruolo": "utente"
+    },
+    {
+        "utente": "katiebell",
+        "password": "collanadiopali",
+        "ruolo": "utente"
+    },
+    {
+        "utente": "oliverbaston",
+        "password": "5asettimana",
+        "ruolo": "utente"
+    },
+    {
+        "utente": "angelinajohnson",
+        "password": "stellafreccia",
+        "ruolo": "amministratore"
+    }
+]

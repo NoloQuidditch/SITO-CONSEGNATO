@@ -1,0 +1,38 @@
+h1{
+  color: gold;
+  font-family: 'Tangerine', cursive;
+  font-size: 400%;
+  margin-bottom: -5%;
+}
+
+#person{
+  padding-top: 10%;
+  font-size: 120%;
+  color: gold;
+}
+
+td{
+  color: white;
+}
+
+#fattura{
+  padding-left: 2%;
+}
+
+#salva{
+  background-color: gold;
+  padding: 1%;
+ color: #191970;
+ margin-top: 10%;
+}
+
+@media screen and (max-width: 600px) {
+  h1{
+    color: gold;
+    font-family: 'Tangerine', cursive;
+    font-size: 300%;
+  }
+#bottone{
+  margin-top: 8%;
+}
+}

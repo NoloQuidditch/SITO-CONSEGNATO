@@ -1,0 +1,33 @@
+
+  body{
+  background-color: #483D8B;
+} 
+
+#bottone{
+ background-color: gold;
+ padding: 1%;
+ color: #191970;
+}
+
+form input[type=text]{
+
+  width: 100px;
+  height: 65%;
+  margin: 10px 10px;
+  box-sizing: 3px 12px;
+  border: none;
+  background-color: #191970;
+  color: white;
+
+}
+
+label {
+  color: gold;
+}
+
+
+h1{
+text-align: center;
+
+}
+

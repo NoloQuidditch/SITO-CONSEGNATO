@@ -1,0 +1,215 @@
+@media screen and (min-width: 600px) {
+#logo{
+width: 8%;
+padding-right: 3%;
+margin-top: 2%;
+}
+
+#Nolo {
+  color: gold;
+font-family: 'Tangerine', cursive;
+  font-size: 250%;
+  padding-left: 2%;
+}
+
+#ourprod{
+font-family: 'Tangerine', cursive;
+  font-weight: bolder;
+  font-size: 250%;
+   color:  #DAA520;
+}
+
+.descrizione{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 50%;
+}
+
+#descrizione{
+  text-align: left;
+}
+
+#nome{
+  color: gold;
+  font-weight: bolder;
+  width: 20%;
+}
+
+#pay{
+  background-color: gold;
+  padding: 1%;
+ color: #191970;
+ text-align: center;
+ margin-left: 45%;
+ margin-right: 55%;
+ margin-top: 5%;
+ margin-bottom: 5%;
+}
+
+.price{
+  padding: 1%;
+}
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table thead{
+   background-color: #191970;
+   color: white;
+}
+table tr {
+  border: 1px solid #ddd;
+}
+
+tbody{
+  color:  white;
+  text-align: auto;
+}
+
+
+
+table th,
+table td {
+text-align: center;
+size: 20% ;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 600px) {
+
+#ourprod{
+font-family: 'Tangerine', cursive;
+  font-weight: bolder;
+  font-size: 100%;
+   color:  #DAA520;
+     margin: .5em 0 .75em;
+   }
+
+#logo{
+width: 15%;
+padding-right: 3%;
+margin-top: 2%;
+}
+
+.descrizione{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: left;
+}
+
+#Nolo {
+  color: gold;
+font-family: 'Tangerine', cursive;
+  font-size: 200%;
+  padding-left: 2%;
+}
+
+.price{
+  text-align: center;
+}
+
+#ourprod{
+   padding-left: 4%;
+  padding-right: none;
+  font-size: 150%;
+}
+
+
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1%;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  #nome{
+  color: gold;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 110%;
+  background-color: #191970;
+  width: 100%;
+}
+  #pay {
+  background-color: gold;
+  padding: 1%;
+ color: #191970;
+ text-align: center;
+ margin-left: 32%;
+ margin-right: 55%;
+ margin-top: 5%;
+ margin-bottom: 5%;
+}
+
+#bottone{
+margin-left: 10%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nolo Quidditch</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/home.css">
+
+</head>
+
+<body class="containder-fluid">
+	<h1><a href="#" id="Nolo"><img src="Logo.png" id="logo">Nolo Quidditch</a></h1>
+
+
+	<a href="storico"><button id="bottone">storico</button></a>
+
+	<form action="/home" method="post">
+		<table class="table">
+			<caption>
+				<p id="ourprod">I nostri prodotti</p>
+			</caption>
+			<thead>
+				<tr>
+					<td id="nome"><b>Nome</b></td>
+					<td class="descrizione"><b>Descrizione</b></td>
+					<td id="dayprice"><b>Prezzo per giornata</b></td>
+					<td><b>Seleziona</b></td>
+				</tr>
+			</thead>
+
+			<tbody>
+
+				<% items.forEach(function(item){ %>
+					<tr>
+						<% if (item.stato !="non disponibile" ){ %>
+							<input type="hidden" value="<%= item.ID%>" name="id" />
+							<input type="hidden" value="<%= item.nome%>" name="nome" />
+							<td id="nome">
+								<%=item.nome%>
+							</td>
+							<td name="descrizione" class="descrizione" id="descrizione">
+								<%=item.descrizione%>
+							</td>
+							<td class="price"><input type="hidden" value="<%= item.prezzo%>" name="prezzo" />
+								<%=item.prezzo%>
+							</td>
+							<td class="price">
+								<% if (item.stato=="disponibile" ){ %>
+									<select name="quantity" id="quantita">
+										<% for(let i=0; i <=item.numero; i ++){ %>
+											<option value="<%= i %>">
+												<%= (i==0?"-": i) %>
+											</option>
+											<% }%>
+									</select>
+									<% } else if (item.stato=="temporaneamente non disponibile" ){ %>
+										<input type="hidden" value="0" name="quantity" />
+										Prodotto temporaneamente non disponibile al noleggio
+										<% } %>
+							</td>
+							<% } %>
+					</tr>
+					<% }); %>
+
+
+			</tbody>
+
+		</table>
+		<input type="submit" name="submit" value="procedi al pagamento" id="pay">
+	</form>
+</body>
+
+</html>

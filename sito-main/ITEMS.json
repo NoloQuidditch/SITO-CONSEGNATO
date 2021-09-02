@@ -1,0 +1,138 @@
+[
+ {
+  "ID": 1,
+  "nome": "Nimbus 2000",
+  "numero": 12,
+  "descrizione": "Veloce e scattante, è adatta per acrobazie aeree come gli avvitamenti o il giro della morte. La Nimbus 2000 è molto resistente e ha un’aerodinamica eccellente, il manico sottile è realizzato in mogano di prima qualità.  Il suo punto di forza è la coda, costituita da rami perfettamente dritti e levigati che mantengono stabile l’assetto. Pur non trattandosi di un modello recente.",
+  "prezzo": 20,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 2,
+  "nome": "Nimbus 2001",
+  "numero": 10,
+  "descrizione": "In accelerazione riesce a superare le prestazioni della Nimbus 2000, anche se presenta alcuni difetti che con l’usura ne compromettono la velocità. Sulla parte posteriore è presente un solco. I progettisti lo hanno realizzato per migliorare l’assetto di volo. In accelerazione la coda della scopa, se non è ben bilanciata, potrebbe impennarsi, ma grazie alla scanalatura mantiene sempre in posizione ottimale. Con l’andar del tempo però questo manico presenta un difetto: l’incisione sulla coda inizia a fare attrito e la velocità di punta cala sensibilmente.",
+  "prezzo": 24,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 3,
+  "nome": "Firebolt",
+  "numero": 8,
+  "descrizione": "Questa scopa da corsa all’avanguardia, è fornita di un raffinato e aerodinamico manico di frassino, trattato con vernice adamantina e numerato a mano. I ramoscelli di betulla che formano la coda, selezionati uno per uno, sono stati sfrondati e lavorati fino a raggiungere un perfetto design per offrire alla Firebolt un ineguagliabile equilibrio e una precisione millimetrica. La Firebolt ha un'accelerazione da 0 a 250 km orari in dieci secondi e venne usata dalle squadre nazionali alla Coppa del Mondo di Quidditch del 1994.",
+  "prezzo": 30,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 4,
+  "nome": "Freccia d'Argento",
+  "numero": 12,
+  "descrizione": "La Freccia d'Argento (ing: Silver Arrow) fu la prima vera scopa da corsa, prodotta da Leonard Jewkes. Può fare fino a settanta miglia all'ora col vento in coda.",
+  "prezzo": 5,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 5,
+  "nome": "Stellafreccia",
+  "numero": 14,
+  "descrizione": "La Stellasfreccia (ing: Shooting Star) fu la prima scopa prodotta dalla Scope Universal Ltd. Inizialmente nel 1955 sembrava molto buona ma successivamente si scoprì che, invecchiando, perdeva velocità e quota.",
+  "prezzo": 12,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 6,
+  "nome": "Oakshaft",
+  "numero": 14,
+  "descrizione": "La Oakshaft 79 è una scopa con manico in legno di quercia inventata nel 1879 da Elias Grimstone, progettata per lunghi voli e per sostenere i venti d’alta quota. A causa della sua grandezza, non era molto adatta per il Quidditch.",
+  "prezzo": 4,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 7,
+  "nome": "Boccino d'oro",
+  "numero": 11,
+  "descrizione": "Il Boccino è piccolo, dorato e dotato di ali. Vola intorno al campo di Quidditch ad altissima velocità, a volte arrestandosi di colpo. Può inoltre cambiare direzione istantaneamente grazie alle articolazioni rotanti delle ali. È stregato per rimanere entro i confini del campo. I Boccini hanno una memoria tattile e ricordano chi è la prima persona che li ha toccati, in caso di disputa sul risultato.",
+  "prezzo": 15,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 8,
+  "nome": "Bolide",
+  "numero": 29,
+  "descrizione": "Il Bolide è una delle palle usate nel Quidditch. È fatta di ferro ed è stregata per inseguire indiscriminatamente i giocatori di Quidditch. ",
+  "prezzo": 10,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 9,
+  "nome": "Pluffa",
+  "numero": 13,
+  "descrizione": "È una palla rossa o blu di cuoio. Ha un diametro di circa dodici pollici. Costituisce il centro del gioco.",
+  "prezzo": 15,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 10,
+  "nome": "Set Completo",
+  "numero": 13,
+  "descrizione": "Il Set dispone di tutti gli strumenti necessari per la partita di Quidditch: un boccino d'oro, due bolidi, una pluffa. è possibile scegliere il colore del set, sono disponibili il cofanetto rosso e il cofanetto blu. Le scope e le mazze sono a parte.",
+  "prezzo": 40,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 11,
+  "nome": "Divisa Grifondoro Adulto",
+  "numero": 12,
+  "descrizione": "Divsa originale della casata Grifondoro, per tutti i maghi che ne fanno parte o per i sostenitori della squadra. Tutte le nostre divise sono realizzate con materiali particolarmente resistenti e di alta qualità, per poterne garantire la disponibilità nel tempo.",
+  "prezzo": 15,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 12,
+  "nome": "Divisa Grifondoro Bambino",
+  "numero": 12,
+  "descrizione": "Divisa Originale Grifondoro per i piccoli maghi. Tutte le nostre divise sono realizzate con materiali particolarmente resistenti e di alta qualità, per poterne garantire la disponibilità nel tempo.",
+  "prezzo": 10,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 13,
+  "nome": "Divisa Serpeverde Adulto",
+  "numero": 13,
+  "descrizione": "Divsa originale per tutti quei maghi che sostengono o fanno parte della casata Serpeverde. Tutte le nostre divise sono realizzate con materiali particolarmente resistenti e di alta qualità, per poterne garantire la disponibilità nel tempo.",
+  "prezzo": 15,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 14,
+  "nome": "Divisa Serpeverde Bambino",
+  "numero": 13,
+  "descrizione": "Divisa Originale per i piccoli maghi Serpeverde. Tutte le nostre divise sono realizzate con materiali particolarmente resistenti e di alta qualità, per poterne garantire la disponibilità nel tempo.",
+  "prezzo": 10,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 15,
+  "nome": "Ginocchiere e parastinchi",
+  "numero": 9,
+  "descrizione": "Protezioni per le ginocchia e gli stinchi realizzate in pelle di Panciasquamato ucraino.",
+  "prezzo": 3,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 16,
+  "nome": "Casco e Occhiali",
+  "numero": 13,
+  "descrizione": "Protezioni per gli occhi e la testa ergonomiche, le migliori in circolazione. Come tutti i nostri prodotti vengono igenizzati tra un cliente e l'altro, ma questi due prodotti con maggiore cura.",
+  "prezzo": 5,
+  "stato": "disponibile"
+ },
+ {
+  "ID": 17,
+  "nome": "Porte trasportabili",
+  "numero": -49,
+  "descrizione": "Comode porte che ti permettono di giocare a Quidditch dove e quando vuoi. Costruite per rendere il montaggio e il trasporto semplice e veloce, telaio estremamente leggero ma resistente.",
+  "prezzo": 10,
+  "stato": "disponibile"
+ }
+]

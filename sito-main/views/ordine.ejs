@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<title>Nolo Quidditch</title>
+
+</head>
+
+<body>
+	<h1>Fattura Nolo Quidditch</h1>
+	<p>
+		<%= new Date(order.dataeora).toString() %>
+	</p>
+	<p>
+		<%= order.utente %>
+	</p>
+
+	<div>
+
+		<table>
+			<tbody>
+				<% order.prodotti.forEach(function(prodotto){ %>
+					<tr>
+
+						<td><b>Prodotto: </b>
+							<%=prodotto.nome%>
+						</td>
+						<td><b>Quantità: </b>
+							<%=prodotto.quantita%>
+						</td>
+						<td><b>Prezzo: </b>
+							<%=prodotto.prezzo%>
+						</td>
+
+					</tr>
+					<% }); %>
+			</tbody>
+			<tfoot>
+				<td><b>Totale: </b>
+					<%=order.totale%> Galeoni
+				</td>
+			</tfoot>
+		</table>
+
+	</div>
+	<div>Grazie per averci scelto! A presto</div>
+</body>
+
+</html>

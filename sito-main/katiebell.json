@@ -1,0 +1,46 @@
+[
+ {
+  "utente": "katiebell",
+  "dataeora": "2021-09-02T12:09:36.232Z",
+  "prodotti": [
+   {
+    "id": "4",
+    "nome": "Freccia d'Argento",
+    "quantita": "1",
+    "prezzo": 5
+   },
+   {
+    "id": "5",
+    "nome": "Stellafreccia",
+    "quantita": "1",
+    "prezzo": 12
+   },
+   {
+    "id": "6",
+    "nome": "Oakshaft",
+    "quantita": "2",
+    "prezzo": 8
+   },
+   {
+    "id": "10",
+    "nome": "Set Completo",
+    "quantita": "1",
+    "prezzo": 40
+   },
+   {
+    "id": "11",
+    "nome": "Divisa Grifondoro Adulto",
+    "quantita": "2",
+    "prezzo": 30
+   },
+   {
+    "id": "13",
+    "nome": "Divisa Serpeverde Adulto",
+    "quantita": "2",
+    "prezzo": 30
+   }
+  ],
+  "totale": 125,
+  "stato": "nolegio concluso"
+ }
+]

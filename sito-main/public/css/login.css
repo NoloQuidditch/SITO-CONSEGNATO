@@ -1,0 +1,56 @@
+@media screen and (min-width: 600px) {
+#login{
+  margin-right: 50%;
+  margin-left: 35%;
+  margin-top: 5%;
+  padding: 3%;
+  height: 40%;
+  border:  solid;
+  border-color: gold;
+  width: 20%;
+}
+
+h1{
+  color: gold;
+  font-family: 'Tangerine', cursive;
+  font-size: 300%;
+  padding-left: 0%
+}
+}
+@media screen and (max-width: 600px) {
+#login{
+  margin-right: 25%;
+  margin-left: 10%;
+  margin-top: 20%;
+  padding: 20%;
+  height: 40%;
+  border:  solid;
+  border-color: gold;
+  width: 40%;
+}}
+
+.UsPw{
+text-align: center;
+}
+
+#password{
+width: 100px;
+  height: 65%;
+  margin: 10px 10px;
+  box-sizing: 3px 12px;
+  border: none;
+  background-color: #191970;
+  padding: none;
+  color:  white;
+}
+
+
+h1{
+  color: gold;
+  font-family: 'Tangerine', cursive;
+  font-size: 250%;
+  padding-top: 7%;
+  padding-left: 7%;
+  padding-right: 8%;
+}
+

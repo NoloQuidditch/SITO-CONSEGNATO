@@ -1,0 +1,66 @@
+[
+ {
+  "utente": "viktorkrum",
+  "dataeora": "2021-09-02T12:08:27.879Z",
+  "prodotti": [
+   {
+    "id": "1",
+    "nome": "Nimbus 2000",
+    "quantita": "2",
+    "prezzo": 40
+   },
+   {
+    "id": "7",
+    "nome": "Boccino d'oro",
+    "quantita": "1",
+    "prezzo": 15
+   },
+   {
+    "id": "9",
+    "nome": "Pluffa",
+    "quantita": "1",
+    "prezzo": 15
+   },
+   {
+    "id": "13",
+    "nome": "Divisa Serpeverde Adulto",
+    "quantita": "1",
+    "prezzo": 15
+   },
+   {
+    "id": "14",
+    "nome": "Divisa Serpeverde Bambino",
+    "quantita": "1",
+    "prezzo": 10
+   },
+   {
+    "id": "16",
+    "nome": "Casco e Occhiali",
+    "quantita": "1",
+    "prezzo": 5
+   }
+  ],
+  "totale": 100,
+  "stato": "noleggio in corso"
+ },
+ {
+  "utente": "viktorkrum",
+  "dataeora": "2021-09-02T12:10:13.804Z",
+  "prodotti": [
+   {
+    "id": "8",
+    "nome": "Bolide",
+    "quantita": "3",
+    "prezzo": 30
+   },
+   {
+    "id": "9",
+    "nome": "Pluffa",
+    "quantita": "1",
+    "prezzo": 15
+   }
+  ],
+  "totale": 45,
+  "stato": "noleggio concluso"
+ }
+]

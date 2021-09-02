@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nolo Quidditch</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/admin.css">
+
+</head>
+
+<body>
+	<h1><img src="Logo.png" id="logo">Nolo Quidditch Amministrazione</h1>
+	<a href="storico"><button id="bottone">storico</button></a>
+	<table>
+		<caption>
+			<p id="newprod">Aggiungi nuovo prodotto</p>
+		</caption>
+
+		<tbody>
+			<tr class="price">
+				<form action="/admin" method="post">
+					<input type="hidden" value="inserimento" name="azione" />
+					<td><b>Nome</b></td>
+					<td><input type="text" value="" name="nome"></td>
+					<td><b>Descrizione</b></td>
+					<td><textarea type="text" value="" name="descrizione" cols="45" rows="4"></textarea></td>
+					<td><b>Numero</b></td>
+					<td><input type="number" step="1" value="" name="numero"></td>
+					<td><b>Prezzo</b></td>
+					<td><input type="number" step="0.01" value="" name="prezzo"></td>
+					<td><input type="submit" value="aggiungi" id="bottone"></td>
+				</form>
+			</tr>
+		</tbody>
+
+	</table>
+
+
+	<table>
+		<caption>
+			<p id="modificaprod">Modifica prodotti</p>
+		</caption>
+		<thead>
+			<tr class="price">
+				<td><b>ID</b></td>
+				<td><b>Nome</b></td>
+				<td><b>Descrizione</b></td>
+				<td><b>Numero</b></td>
+				<td><b>Prezzo</b></td>
+				<td><b>Modifica Stato</b></td>
+				<td><b>Modifica</b></td>
+				<td><b>Elimina</b></td>
+
+			</tr>
+		</thead>
+
+		<tbody>
+
+			<% items.forEach(function(item){ %>
+				<tr>
+					<form action="/admin" method="post">
+						<input type="hidden" value="<%= item.ID%>" name="id" />
+						<td id="nomeitem">
+							<%= item.ID%>
+						</td>
+						<td><input type="text" value="<%= item.nome%>" name="nome"></td>
+						<td><textarea name="descrizione" cols="45" rows="4"
+								id="descrizione"><%= item.descrizione%></textarea></td>
+						<td><input type="number" step="1" value="<%= item.numero%>" name="numero"></td>
+						<td><input type="number" step="0.01" value="<%= item.prezzo%>" name="prezzo"></td>
+						<td><select name="stato" value="<%= item.stato%>" id="disponibilita">
+								<option value="disponibile">Disponibile</option>
+								<option value="temporaneamente non disponibile">Temporaneamente non disponibile</option>
+								<option value="non disponibile">Non disponibile</option>
+							</select></td>
+						<td><input type="submit" value="modifica" id="bottone" /></td>
+					</form>
+					<form action="/admin/eliminaitem" method="post">
+						<input type="hidden" value="<%= item.ID%>" name="id" />
+						<td><input type="submit" value="elimina" id="bottone" /></td>
+					</form>
+				</tr>
+				<% }); %>
+
+		</tbody>
+
+	</table>
+	</table>
+
+
+</body>
+
+</html>
